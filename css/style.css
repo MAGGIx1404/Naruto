@@ -452,3 +452,80 @@ ul{
 .btn-2 a:hover{
     color: red;
 }
+
+.movie{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.movie .movie-heading{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: capitalize; 
+}
+.movie .movie-info{
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+.movie .movie-info .movie-card{
+    width: 25rem;
+    height: 34rem;
+    padding: 0.5rem;
+    border-radius: 20px;
+    transition: all .9s;
+}
+.movie .movie-info .movie-card:hover{
+    transform: scale(0.9) rotatex(360deg);
+    color: black;
+    background-color: white;
+}
+.movie .movie-info .movie-card img{
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    object-position: center;
+}
+.movie .movie-info .movie-card h1{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.movie .movie-info .movie-card h4{
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #888888;
+    margin-bottom: 1rem;
+}
+.movie .movie-info .movie-card a{
+    text-decoration: none;
+    color: red;
+    font-size: 1.2rem;
+    font-weight: 800;
+    transition: all  .5s ease;
+}
+.movie .movie-info .movie-card a:hover{
+    color: black;
+    text-decoration: underline solid black 4px;
+}
+.movie .movie-btn{
+    text-align: center;
+    margin-top: 1rem;
+} 
+.movie .movie-btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: all .5s ease;
+}
+.movie .movie-btn  a:hover{
+    color: red;
+    text-decoration: red underline solid 4px;
+}
