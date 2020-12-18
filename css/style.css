@@ -271,3 +271,83 @@ ul{
     transform: perspective(1300px) rotateY(20deg) translatez(340px) scale(0.5);
 }
 /* end */
+
+.blogs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.blogs .blogs-heading{
+    text-align: center;
+    margin-top: 2rem;
+}
+.blogs .blogs-heading h1{
+    font-size: 2rem;
+    font-weight: 200;
+    text-transform: capitalize;
+    animation: color-change 10s ease-in-out infinite;
+}
+.blogs .blogs-info{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 2rem;
+}
+.blogs .blogs-info .blogs-card{
+    width: 30rem;
+    height: auto;
+    cursor: pointer;
+    padding: 0.8rem;
+    transition:all .5s;
+    border-radius: 20px;
+}
+.blogs .blogs-info .blogs-card:hover{
+    transform: rotateY(360deg) scale(0.95);
+    background-color: white;
+    color: black;
+}
+.blogs .blogs-info .blogs-card img{
+    width: 100%;
+    height: auto;
+}
+.blogs .blogs-info .blogs-card h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+.blogs .blogs-info .blogs-card p{
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.blogs .blogs-info .blogs-card a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    transition: all .5s ease;
+}
+.blogs .blogs-info .blogs-card a:hover{
+    color: red;
+}
+
+.blogs .last-btn{
+    text-align: center;
+}
+.blogs .last-btn a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    transition: all .5s ease;
+}
+.blogs .last-btn a:hover{
+    color: red;
+}
